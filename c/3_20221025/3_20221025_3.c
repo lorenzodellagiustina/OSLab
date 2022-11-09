@@ -68,11 +68,11 @@ int sort(int *arrayPointer, int size, int a, int b) {
 
 /**
  * Merges two ordered lists in an array ([a,r] and [r+1, b]) into an ordered list
- * @param arrayPointer
- * @param size
- * @param a
- * @param r
- * @param b
+ * @param arrayPointer is an address of an array
+ * @param size the size of the pointed array
+ * @param a is a valid index (a<r<b) of the array pointed by arrayPointer
+ * @param r is a valid index (a<r<b) of the array pointed by arrayPointer
+ * @param b is a valid index (a<r<b) of the array pointed by arrayPointer
  */
 void merge(int *arrayPointer, int size, int a, int r, int b) {
     int i = a;
@@ -110,7 +110,6 @@ void merge(int *arrayPointer, int size, int a, int r, int b) {
  * @param size the size of the pointed array
  * @param a is a valid index of the array pointed by arrayPointer
  * @param b is a valid index of the array pointed by arrayPointer
- * @return 0 if succeeds, 1 if fails
  */
 void qsort(int *arrayPointer, int size, int a, int b) {
     if (b - a > 0) {
