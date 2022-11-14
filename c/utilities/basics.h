@@ -1,3 +1,5 @@
+#ifndef _BASICS_H_
+#define _BASICS_H_
 #include <stdio.h>
 
 /**
@@ -36,3 +38,4 @@ int partition(int *arrayPointer, int size, int a, int b);
  * @param b is a valid index of the array pointed by arrayPointer
  */
 void quicksort(int *arrayPointer, int size, int a, int b);
+#endif
